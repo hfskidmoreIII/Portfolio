@@ -1,13 +1,15 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-from matplotlib import rcParams
-from scipy.stats.stats import pearsonr
-from scipy.stats import f_oneway
+
 #There has been many deaths in Florida due to illness. While many believe it to be covid-19 alone, 
 #there may be other works contributing. Data will be mined and analyized to see if any particular illness
 #contributes to the death rate. The null hypothesis is there is no illness with any statistical signifigance 
 #between the death rate and the illness. The alternative hypothesis would be that there is a significance between the rate
 #and at least one illness.import simpy
+
+import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+from scipy.stats.stats import pearsonr
+from scipy.stats import f_oneway
 
 df=pd.read_excel(r'C:\Users\hfski\Documents\Covid_Location.xlsx', sheet_name='Sheet1')
 print(df)
